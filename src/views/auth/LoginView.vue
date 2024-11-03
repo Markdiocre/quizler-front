@@ -8,7 +8,7 @@ const password = ref<string>('')
 
 async function handleLogin() {
     await requestHandler({
-        url: '/api/auth/login/',
+        url: 'api/auth/login/',
         method: 'post',
         body: {
             username: username.value,
